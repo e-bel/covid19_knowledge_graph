@@ -1,0 +1,1100 @@
+[
+ {
+  "document": {
+   "authors": "Priya S",
+   "contact_info": "priya@causalitybiomodels.com",
+   "copyright": "Copyright \u00a9 2020 Fraunhofer Institute SCAI, All rights reserved",
+   "description": "COVID Knowledge Curation project",
+   "licences": "Private Ownership to Fraunhofer Institute SCAI",
+   "name": "32120929.bel",
+   "version": "2.1.0"
+  }
+ },
+ {
+  "definitions": [
+   {
+    "namespace": {
+     "keyword": "CHEBI",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/chebi/chebi-20190708.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "GO",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/go/go-20180109.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "MESH",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/mesh/mesh-names-20181007.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "TAX",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/namespace/ncbi-taxonomy/ncbi-taxonomy-20200322.belns",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "UNIPROT",
+     "type": "PATTERN",
+     "value": "^([A-N,R-Z][0-9]([A-Z][A-Z, 0-9][A-Z, 0-9][0-9]){1,2})|([O,P,Q][0-9][A-Z, 0-9][A-Z, 0-9][A-Z, 0-9][0-9])(\\.\\d+)?$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "PUBCHEM",
+     "type": "PATTERN",
+     "value": "^\\d+$",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "dbSNP",
+     "type": "PATTERN",
+     "value": "rs[0-9]+",
+     "value_list": []
+    }
+   },
+   {
+    "namespace": {
+     "keyword": "FIXME",
+     "type": "PATTERN",
+     "value": ".*",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "CellLine",
+     "type": "URL",
+     "value": "https://arty.scai.fraunhofer.de/artifactory/bel/annotation/cell-line/cell-line-20190128.belanno",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "BioAssay",
+     "type": "PATTERN",
+     "value": ".*",
+     "value_list": []
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Assay",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Plaque Assay"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Timeline",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "36 hours",
+      "48 hours"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Virus_stage",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "late"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "concentration",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "0.30 \u03bcM",
+      "0.4 \u03bcM",
+      "0.50 \u03bcM",
+      "4 \u03bcM",
+      "40 \u03bcM"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationType",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Research"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "PublicationStatus",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Published"
+     ]
+    }
+   },
+   {
+    "annotation": {
+     "keyword": "Section",
+     "type": "LIST",
+     "value": null,
+     "value_list": [
+      "Results"
+     ]
+    }
+   }
+  ]
+ },
+ {
+  "statements_and_sets": [
+   {
+    "sets": [
+     {
+      "citation": {
+       "type": "PubMed",
+       "title": "Biomolecules. 2020 Feb 27;10(3). pii: biom10030366. doi: 10.3390/biom10030366.",
+       "ref": "32120929",
+       "pub_date": "",
+       "author_list": "",
+       "comment": ""
+      }
+     },
+     {
+      "set": {
+       "PublicationType": [
+        "Research"
+       ]
+      }
+     },
+     {
+      "set": {
+       "PublicationStatus": [
+        "Published"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Section": [
+        "Results"
+       ]
+      }
+     },
+     {
+      "evidence": "The S. cusia leaf methanol extract reduced HCoV\u2010NL63\u2010induced CPE in \\\nLLC\u2010MK2 cells in a concentration\u2010dependent manner (Figure 1A)."
+     },
+     {
+      "set": {
+       "CellLine": [
+        "immortal rhesus macaque kidney-derived cell line cell"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Human coronavirus NL63"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Cytopathogenic Effect, Viral"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Strobilanthes cusia leaf methanol extract"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Cytopathogenic Effect, Viral"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "evidence": "The plaque assay indicated that the S. cusia leaf methanol extract \\\nexhibited a strong inhibitory effect against the production of progeny \\\nHCoV\u2010NL63 virions released into the cultured media of LLC\u2010MK2 cells at \\\n37 \u00b0C 48 h post\u2010infection (Figure 1B)."
+     },
+     {
+      "set": {
+       "CellLine": [
+        "immortal rhesus macaque kidney-derived cell line cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Timeline": [
+        "48 hours"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Assay": [
+        "Plaque Assay"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Strobilanthes cusia leaf methanol extract"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Human coronavirus NL63"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Assay"
+      ]
+     },
+     {
+      "unset": [
+       "Timeline"
+      ]
+     },
+     {
+      "evidence": "Immunofluorescent staining with anti\u2010HCoV\u2010NL63\u2010immunized sera revealed \\\nthat the S. cusia leaf methanol extract inhibited the \\\nHCoV\u2010NL63\u2010infected LLC\u2010MK2 positivity at 37 \u00b0C 36 h post\u2010infection in \\\na concentration\u2010dependent manner as well (Figure 2A)."
+     },
+     {
+      "set": {
+       "CellLine": [
+        "immortal rhesus macaque kidney-derived cell line cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Timeline": [
+        "36 hours"
+       ]
+      }
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "immunofluorescent labeling"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Strobilanthes cusia leaf methanol extract"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Human coronavirus NL63"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "Timeline"
+      ]
+     },
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "evidence": "Among them, tryptanthrin at 40 \u03bcM exhibited the strongest antiviral \\\nactivity with a significant reduction in HCoV\u2010NL63\u2010induced CPE in \\\nLLC\u2010MK2 cells 36 and 48 h post\u2010infection (Figure 3A)."
+     },
+     {
+      "set": {
+       "CellLine": [
+        "immortal rhesus macaque kidney-derived cell line cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "concentration": [
+        "40 \u03bcM"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Timeline": [
+        "36 hours",
+        "48 hours"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Human coronavirus NL63"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Cytopathogenic Effect, Viral"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "Tryptanthrine"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "negative_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Cytopathogenic Effect, Viral"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Timeline"
+      ]
+     },
+     {
+      "unset": [
+       "concentration"
+      ]
+     },
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "evidence": "Indigodole B (5aR\u2010ethyltryptanthrin) at 40 \u03bcM concentration was ranked \\\nthe second highest in terms of anti\u2010HCoV\u2010NL63 activity in reducing \\\nvirus induced CPE 36 and 48 h post\u2010infection (Figure 3A)."
+     },
+     {
+      "set": {
+       "CellLine": [
+        "immortal rhesus macaque kidney-derived cell line cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "concentration": [
+        "40 \u03bcM"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Timeline": [
+        "36 hours",
+        "48 hours"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Human coronavirus NL63"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "positive_correlation"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Cytopathogenic Effect, Viral"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Indigodole B"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Cytopathogenic Effect, Viral"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Timeline"
+      ]
+     },
+     {
+      "unset": [
+       "concentration"
+      ]
+     },
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "evidence": "In the CPE reduction assay, tryptanthrin at 0.4, 4, and 40 \u03bcM \\\nsignificantly reduced virus\u2010induced CPE in LLCMK2 cells at 37 \u00b0C 48 h \\\npost\u2010infection, whereas the same effect was noted only for 40 \u03bcM \\\nindigodole B (Figure 4B\u2013C)."
+     },
+     {
+      "set": {
+       "CellLine": [
+        "immortal rhesus macaque kidney-derived cell line cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "concentration": [
+        "0.4 \u03bcM",
+        "4 \u03bcM",
+        "40 \u03bcM"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Timeline": [
+        "48 hours"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "Tryptanthrine"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Cytopathogenic Effect, Viral"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Timeline"
+      ]
+     },
+     {
+      "unset": [
+       "concentration"
+      ]
+     },
+     {
+      "set": {
+       "concentration": [
+        "40 \u03bcM"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "FIXME",
+         "name": "Indigodole B"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "process",
+         "name": "biological_process"
+        }
+       },
+       [
+        {
+         "namespace": "MESH",
+         "name": "Cytopathogenic Effect, Viral"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "evidence": "Moreover, the plaque assay revealed that tryptanthrin and indigodole B \\\nexerted a potent inhibitory effect on the in vitro progeny production \\\nof HCoV\u2010NL63 (Figure 4D\u2013E), wherein IC50 values for virus yield were \\\n1.52 \u03bcM and 2.60 \u03bcM for tryptanthrin and indigole B, respectively \\\n(Table 1)."
+     },
+     {
+      "set": {
+       "CellLine": [
+        "immortal rhesus macaque kidney-derived cell line cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Assay": [
+        "Plaque Assay"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "Tryptanthrine"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Human coronavirus NL63"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "Assay"
+      ]
+     },
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "evidence": "Immunofluorescent staining indicated that tryptanthrin significantly \\\nreduced the percentage of HCoV\u2010NL63\u2010positive cells (Figure 5A, middle \\\nand bottom), markedly reducing the HCoV\u2010NL63 infectivity with an IC50 \\\nvalue of 0.30 \u03bcM in human lung epithelial Calu\u20103 cells (Figure 5B, \\\nTable 1)."
+     },
+     {
+      "set": {
+       "CellLine": [
+        "Calu-3 cell"
+       ]
+      }
+     },
+     {
+      "set": {
+       "BioAssay": [
+        "immunofluorescent labeling"
+       ]
+      }
+     },
+     {
+      "set": {
+       "concentration": [
+        "0.30 \u03bcM"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "Tryptanthrine"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Human coronavirus NL63"
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "BioAssay"
+      ]
+     },
+     {
+      "unset": [
+       "CellLine"
+      ]
+     },
+     {
+      "evidence": "In addition, tryptanthrin exhibited a higher inhibitory activity \\\nagainst the production of extracellular virions in the late stage \\\n(IC50 = 0.05 \u03bcM) than in the early stage (IC50 = 6.99 \u03bcM) (Figure \\\n7A,B, Table 1)."
+     },
+     {
+      "set": {
+       "Assay": [
+        "Plaque Assay"
+       ]
+      }
+     },
+     {
+      "set": {
+       "Virus_stage": [
+        "late"
+       ]
+      }
+     },
+     {
+      "set": {
+       "concentration": [
+        "0.50 \u03bcM"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "statement": [
+     {
+      "subject": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "CHEBI",
+         "name": "Tryptanthrine"
+        }
+       ]
+      ]
+     },
+     {
+      "relation": "decreases"
+     },
+     {
+      "object": [
+       {
+        "function": {
+         "type": "abundance",
+         "name": "abundance"
+        }
+       },
+       [
+        {
+         "namespace": "TAX",
+         "name": "Human coronavirus NL63"
+        },
+        [
+         [
+          {
+           "function": {
+            "type": "modifier",
+            "name": "location"
+           }
+          },
+          [
+           {
+            "namespace": "GO",
+            "name": "extracellular space"
+           }
+          ]
+         ]
+        ]
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "sets": [
+     {
+      "unset": [
+       "concentration"
+      ]
+     },
+     {
+      "unset": [
+       "Virus_stage"
+      ]
+     },
+     {
+      "unset": [
+       "Assay"
+      ]
+     },
+     {
+      "unset": [
+       "PublicationType"
+      ]
+     },
+     {
+      "unset": [
+       "PublicationStatus"
+      ]
+     },
+     {
+      "unset": [
+       "Section"
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]
